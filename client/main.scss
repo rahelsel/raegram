@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Quicksand:300,400,500,700');
+@import 'include-media';
+
+$white: #FFFFFF;
+$butterScotch: #BDC2BF;
+$lightGrey: #C2B8B2;
+$blue: #73B8CF;
+$black: #07020D;
+
+$bgColor: $white;
+$focalColor: $blue;
+$accentColor: $butterScotch;
+$textColor: $black;
+$extras: $lightGrey;
+
+$focalFont: 'Quicksand', sans-serif;
+$textFont: 'Lato', sans-serif;
+$baseFontSize: 16px;
+$containerSize: $baseFontSize * 40;
+
+$border: 1px solid $extras;
+$borderRadius: 10px;
+
+body {
+    color: $textColor;
+    font-size: $baseFontSize;
+    font-family: $textFont;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    max-width: $containerSize;
+    margin: auto;
+    width: 90%;
+    img {
+        background-color: $extras;
+        border: $border;
+        border-radius: $borderRadius;
+        width: 100%;
+    }
+}
+
+h1 {
+    color: $focalColor;
+    font-family: $focalFont;
+    font-size: $baseFontSize * 2;
+    font-weight: 300;
+    text-align: center;
+    @include media(">tablet") {
+        font-size: $baseFontSize * 4; 
+        }
+}
+
+//homework: remove padding and the dot and make sure each photo is centered, arrange scss alphabetically (inside each tag)
